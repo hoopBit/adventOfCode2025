@@ -6,15 +6,6 @@ This space is dedicated to documenting my journey through the daily programming 
 
 ---
 
-## 🚀 Goals
-
-The main purpose of this repository is:
-* To archive all my solutions in one place.
-* To track my progress during the event.
-* **To strengthen my knowledge of JavaScript for algorithms and data structures.**
-
----
-
 ## 🛠️ Language and Tools
 
 The solutions in this repository are written in **JavaScript**.
