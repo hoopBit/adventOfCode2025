@@ -20,11 +20,11 @@ The repository is organized by day. Each puzzle has a dedicated folder:
 
 ```
 ├── Day01/
-    ├── solution.js       # Code for Part 1 and Part 2
+    ├── day01.js       # Code for Part 1 and Part 2
     └── README.md        # (Optional) Notes or thoughts on the puzzle
 
 ├── Day02/
-    ├── solution.js
+    ├── day02.js
     └── ...
 
 ├── ...
