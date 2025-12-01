@@ -8,7 +8,7 @@ This space is dedicated to documenting my journey through the daily programming 
 
 ## 🛠️ Language and Tools
 
-The solutions in this repository are written in **JavaScript**.
+The solutions in this repository are written in **TypeScript**.
 
 Any specific libraries or tools used will be mentioned in the individual day folders if necessary.
 
