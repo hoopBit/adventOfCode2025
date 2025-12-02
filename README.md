@@ -41,7 +41,7 @@ I will track the completed puzzles below.
 (⭐️ = Part 1 complete | 🌟 = Part 2 complete)
 
 * [x] **Day 01:** (⭐️) (🌟)
-* [ ] **Day 02:** (⭐️) ()
+* [x] **Day 02:** (⭐️) (🌟)
 * [ ] **Day 03:** () ()
 * [ ] **Day 04:** () ()
 * [ ] **Day 05:** () ()

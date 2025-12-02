@@ -3,9 +3,10 @@ import useFileReader from "../../utils/fileReader";
 type Range = `${number}-${number}`;
 
 const useIDsChecker = () => {
-    let invalidIDsSum = 0;
+    var sumPartOne = 0;
+    var sumPartTwo = 0;
 
-    const checkInvalidIDs = (ranges: Range[]) => {
+    const checkIDsDigitsRepeatedTwice = (ranges: Range[]) => {
         ranges.forEach(range => {
             const [firstIdStr, lastIdStr] = range.split("-");
             const firstId = Number(firstIdStr);
@@ -20,14 +21,32 @@ const useIDsChecker = () => {
                 const secondHalfStr = currentNumberStr.slice(currentNumberStr.length / 2);
                 const firstHalf = Number(firstHalfStr);
                 const secondHalf = Number(secondHalfStr);
-                if ( firstHalf === secondHalf) invalidIDsSum += currentNumber;   
+                if ( firstHalf === secondHalf) sumPartOne += currentNumber;   
+            }
+        });
+    }
+
+    const checkIDsDigitsRepeatedAtLeastTwice = (ranges: Range[]) => {
+        const regex = /^(\d+?)\1+$/;
+
+        ranges.forEach(range => {
+            const [firstIdStr, lastIdStr] = range.split("-");
+            const firstId = Number(firstIdStr);
+            const lastId = Number(lastIdStr);
+
+            for (let currentNumber = firstId; currentNumber <= lastId; currentNumber++) {
+                const currentNumberStr = currentNumber.toString();
+                const match = currentNumberStr.match(regex);
+                if (match) sumPartTwo += currentNumber;
             }
         });
     }
 
     return {
-        checkInvalidIDs,
-        getInvalidIDsSum: () => invalidIDsSum,
+        checkIDsDigitsRepeatedTwice,
+        checkIDsDigitsRepeatedAtLeastTwice,
+        getSumPartOne: () => sumPartOne,
+        getSumPartTwo: () => sumPartTwo
     };
 }
 
@@ -35,5 +54,7 @@ const useIDsChecker = () => {
 const ranges = useFileReader().readFile("input.txt").split(",") as Range[];
 const IDsChecker = useIDsChecker();
 
-IDsChecker.checkInvalidIDs(ranges);
-console.log("Sum of invalid IDs: " + IDsChecker.getInvalidIDsSum());
+IDsChecker.checkIDsDigitsRepeatedTwice(ranges);
+IDsChecker.checkIDsDigitsRepeatedAtLeastTwice(ranges);
+console.log("Sum of invalid IDs (1): " + IDsChecker.getSumPartOne());
+console.log("Sum of invalid IDs (2): " + IDsChecker.getSumPartTwo());
