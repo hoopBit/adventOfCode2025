@@ -44,7 +44,7 @@ I will track the completed puzzles below.
 * [x] **Day 02:** (⭐️) (🌟)
 * [x] **Day 03:** (⭐️) (🌟)
 * [x] **Day 04:** (⭐️) (🌟)
-* [ ] **Day 05:** () ()
+* [ ] **Day 05:** (⭐️) ()
 * [ ] **Day 06:** () ()
 * [ ] **Day 07:** () ()
 * [ ] **Day 08:** () ()

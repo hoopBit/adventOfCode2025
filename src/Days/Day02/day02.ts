@@ -1,6 +1,6 @@
 import useFileReader from "../../utils/fileReader";
 
-type Range = `${number}-${number}`;
+export type Range = `${number}-${number}`;
 
 const useIDsChecker = () => {
     var sumPartOne = 0;
