@@ -49,6 +49,6 @@ I will track the completed puzzles below.
 * [x] **Day 07:** (⭐️) (🌟)
 * [x] **Day 08:** (⭐️) (🌟)
 * [x] **Day 09:** (⭐️) (🌟)
-* [ ] **Day 10:** () ()
+* [ ] **Day 10:** (⭐️) ()
 * [ ] **Day 11:** () ()
 * [ ] **Day 12:** () ()
