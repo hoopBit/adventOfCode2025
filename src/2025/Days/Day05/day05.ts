@@ -1,4 +1,4 @@
-import useFileReader from "../../utils/fileReader";
+import useFileReader from "../../../utils/fileReader";
 import { Range } from "../Day02/day02";
 
 

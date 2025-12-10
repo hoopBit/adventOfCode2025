@@ -1,4 +1,4 @@
-import useFileReader from "../../utils/fileReader";
+import useFileReader from "../../../utils/fileReader";
 
 export type Range = `${number}-${number}`;
 

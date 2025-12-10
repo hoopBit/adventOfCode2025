@@ -1,4 +1,4 @@
-import useFileReader from '../../utils/fileReader';
+import useFileReader from '../../../utils/fileReader';
 
 type Coordinates = {
     x: number,

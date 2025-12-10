@@ -131,7 +131,7 @@ const solve = (input: string[]) => {
 };
 
 //----- main -----
-import useFileReader from '../../utils/fileReader';
+import useFileReader from '../../../utils/fileReader';
 
 const lines = useFileReader().readFile("input.txt").split("\n");
 
